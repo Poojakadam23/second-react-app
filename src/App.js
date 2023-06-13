@@ -1,21 +1,15 @@
 
 function App(){
-  let str=`Hello Universe!!!`;
-  let pi=3.141159;
-  let active=true;
-  let isUserLoggedIn = true;
-  let user = {id:1,name:"rohit"}
-
+  let style={background:"green",color:"white"}
+  
   return(
     <>
-    <h1>Hello World</h1>
-    <h1>{str}</h1>
-    <h1>PI{pi}!!</h1>
-    {isUserLoggedIn && <h1>Welcome CDAC!</h1>}
-    <h1>{active?"good morning" : "good night"}</h1>
-    <h1>
-      ID:{user.id} Name:{user.name}
-    </h1>
+    <h1 style={style}>Hello World</h1>
+    <h1 style={{}}>Hello</h1>
+    <h1 style={{background:"blue",color:"white"}}>Hello Again</h1>
+    <h1 style={{ backgroundColor: "red", color: "white", padding: "8px" }}>
+        hello World
+      </h1>
     </>
   );
 
